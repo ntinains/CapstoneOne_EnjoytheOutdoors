@@ -527,4 +527,4 @@ const mountainsArray = [
             lng: -71.556745
         }
     }
-]
+];
