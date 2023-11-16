@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    flex-flow: column;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: #20504f;
+    text-align: center;
+    margin: 15px 20px;
+    color:#ffffff;    
+} 
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 25px;
+    color-scheme: #6E6E6E;
+}
+
+header {
+    color:#ffffff;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+
+}
+
+header > nav a:visited, nav a:link {
+    color: #20504f;
+    text-decoration: none;
+} 
+
+header > nav > ul {
+    display: inline;
+    padding: 0;
+} 
+
+header > nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+    font-size: 20px;
+} 
+
+h1{
+    font-size:55px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size:35px;
+    margin: 10px 0;
+    text-align: center;
+    color:#ffffff;
+}
+
+
+.sub-title{
+    font-size: 30px;
+    text-align: center;
+    font-style:normal;
+}
+
+.object-fit-contain {
+    width:100%;
+    height:auto;
+    object-fit: contain;
+    padding: 20px;
+    margin:0 5px 0 5px;
+}
+
+footer {
+    text-align: center;
+    text-align: center; /*center text content */
+    justify-content: center; /* center horitzontally */
+    align-items: center;  /* center vertically */
+    background-color: #438582;
+    color:#ffffff; /* set link text color */
+    padding: 20px; 
+    margin: 0 5px 0 5px;  
+    border-radius: 90%;   
+}  
+
+footer nav a:visited, footer nav a:link {
+    color:#ffffff;
+    text-decoration: none;
+} 
+
+
+footer > nav > ul > li {
+    list-style: none;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 20px;
+    display: inline;
+} 
+
+
+section {
+    padding: 20px;
+    color:#ffffff; 
+    text-align: center; /* center text content */
+   justify-content: center; /* center horitzontally */
+    align-items: center; /*center vertically */
+
+}
+
+@media only screen and (min-width: 768px) {  /* targets screens 768px wider or above */
+    main {
+        display:flex;
+    }
+}  
+
