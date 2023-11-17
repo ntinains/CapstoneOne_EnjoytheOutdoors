@@ -42,7 +42,21 @@
         <h1> Explore New Horizons </h1>
         <h3>Discover Your Next Adventure in National Parks and Mountains </h3>
     
-        <video autoplay muted loop class="object-fit-contain img-fluid w-100" src="/enjoy-the-outdoors/Mountain video/production_id_4763824 (2160p).mp4"></video>
+        <div class="card container-fluid" style="width: 30%; margin: 20px auto;">
+            <img class="card-img-top" src="/enjoy-the-outdoors/images/Bond-StoryImage_3.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Discover New Mountains</h4>
+                <p class="card-text" style="font-size:medium">Click below to explore the option of different Mountains. </p>
+                
+            <!--- Selection option  -->
+            <div class="mb-12">
+                <select id="mountainSelect" class="form-select" aria-label="Default select">
+                    <option selected>Select an mountain</option>
+                </select>
+            </div>
+            <p id="description" class="mountain-info"></p>
+            </div>
+        </div>
 
     
        <section>
@@ -50,21 +64,6 @@
        </section> 
     </main>
 
-<div class="card container-fluid" style="width: 18rem;">
-    <img class="card-img-top" src="/enjoy-the-outdoors/images/Bond-StoryImage_3.jpg" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Discover New Mountains</h5>
-        <p class="card-text">Click below to explore the option of different Mountains. </p>
-        
-    <!--- Selection option  -->
-    <div class="mb-4">
-        <select id="mountainSelect" class="form-select" aria-label="Default select">
-            <option selected>Select an mountain</option>
-        </select>
-    </div>
-    <p id="description" class="mountain-info"></p>
-    </div>
-</div>
 
     <footer>
         <nav>
@@ -77,7 +76,7 @@
         </nav>
     </footer>
 
-    <!-- <link rel="stylesheet" href="/Css  Styles/index.css"/> -->
+    <link rel="stylesheet" href="/Css  Styles/mountains.css"/>
     <script src="/Scripts File/mountainsInfo.js"></script>
 </body>
 </html>

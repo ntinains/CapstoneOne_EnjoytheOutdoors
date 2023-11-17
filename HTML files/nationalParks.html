@@ -42,30 +42,37 @@
         <h1> Explore New Horizons </h1>
         <h3>Discover Your Next Adventure in National Parks and Mountains </h3>
     
-        <video autoplay muted loop class="object-fit-contain img-fluid w-100" src="/enjoy-the-outdoors/Mountain video/production_id_4763824 (2160p).mp4"></video>
+        <!-- <video autoplay muted loop class="object-fit-contain img-fluid w-100" src="/enjoy-the-outdoors/Mountain video/production_id_4763824 (2160p).mp4"></video> -->
 
+        <div class="card container-fluid" style="width: 30%; margin: 20px auto;">
+            <img class="card-img-top" src="/enjoy-the-outdoors/images/Cannon-StoryImg_2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">National Parks Search</h4>
+                <p class="card-text" style="font-size:medium">Click below to explore the different National Parks. You will find the option to search for Mountains by location and park type below. </p>
+                
+            <!--- Selection option  -->
+            <div class="mb-12">
+                <select id="locationSelect" class="form-select" aria-label="location select">
+                    <option selected>Select by location: </option>
+                </select>
+            </div>
+    
+            <br> 
+
+            <div class="mb-12">
+                <select id="parkSelect" class="form-select" aria-label="park select">
+                    <option selected>Select by park type</option>
+                </select>
+            </div>
+    
+            <p id="description" class="nationalpark-info"></p>
+            </div>
+        </div>
     
        <section>
         <p>Welcome to Explore the Great Outdoors, your ultimate destination for discovering and embracing the beauty of nature. Our website is dedicated to helping users find exciting activities to enjoy in the great outdoors, with a special focus on national parks and majestic mountains. The home page welcomes you with a vibrant display, setting the tone for your adventure. Navigate to our National Parks search page to uncover a wealth of information about these natural wonders—from stunning landscapes to recreational activities, we've got it all. For those seeking the thrill of climbing, our Mountain Information page provides valuable insights into the world's most breathtaking peaks. Whether you're an avid adventurer or someone looking to connect with nature, our website is your go-to resource for planning unforgettable outdoor experiences. Embark on a journey of exploration and let "Explore the Great Outdoors" be your guide to the wonders of our planet's most awe-inspiring destinations.</p>
        </section> 
     </main>
-
-    <div class="card container-fluid" style="width: 18rem;">
-        <img class="card-img-top" src="/enjoy-the-outdoors/images/Bond-StoryImage_3.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">National Parks Search</h5>
-            <p class="card-text">Click below to explore the different National Parks. You will find the option to search for Mountains by location and park type below. </p>
-            
-        <!--- Selection option  -->
-        <div class="mb-4">
-            <select id="mountainSelect" class="form-select" aria-label="Default select">
-                <option selected>Select an mountain</option>
-            </select>
-        </div>
-        <p id="description" class="mountain-info"></p>
-        </div>
-    </div>
-
 
     <footer>
         <nav>
@@ -78,7 +85,9 @@
         </nav>
     </footer>
 
-    <!-- <link rel="stylesheet" href="/Css  Styles/index.css"/> -->
+    <link rel="stylesheet" href="/Css  Styles/nationalparks.css"/>
+    <script src="/enjoy-the-outdoors/scripts/locationData.js"></script>
+    <script src="/enjoy-the-outdoors/scripts/parkTypeData.js"></script>
     <script src="/Scripts File/nationalparks.js"></script>
 </body>
 </html>
